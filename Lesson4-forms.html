@@ -1,30 +1,5 @@
 <!DOCTYPE html>
 <head> Crazy quiz <title> Crazy quiz</title></head>
-<!Homework requirements:
-
-Create a page containing a contact form that allows the user to fill up their personal information (lesson4-forms.html)
-Create a page with an Iframe (lesson4-iframes.html) that loads lesson4-form.html on page load
-Create two links that (i) targets the contact form (lesson4-forms.html) and (ii) targets a Wikipedia page
-You can style the iframe however you like (height, width, border size and color, etc.)
-Push to your repository (same repo as your previous lessons) 🚀>
-
-<! fields to create:
-text - what would you like to be called
-email - your very first email
-
-color - your eyes
-radio single- do you have all the teeth left?
-number - if you have some out, how many are left? with 32 as max
-
-
-range - how much would you like to have on your bank account
-date - when did you have you first date?
-
-dropdown - which planet would you like to colonize first?
-checkbox - which transport would you use for the trip?
-datalist - who would you take with you on a trip?
-
-textarea - why do you want to rule the world?
 <body>
 
 <h1>Getting to know you </h1>
@@ -41,7 +16,21 @@ textarea - why do you want to rule the world?
 <div>
 <label for="date">When did you first have a date?</label>
 <input type="date" id="date">
+</div>
+<div>On a scale from 1 (hell) to 3 (heaven), how did the date go?<br>
+<input type="radio" id="hell" name="feeling" value="Hell">
+  <label for="hell">Hell</label><br>
+  <input type="radio" id="OK" name="feeling" value="OK">
+  <label for="OK">OK</label><br>
+  <input type="radio" id="Heaven" name="feeling" value="Heaven">
+  <label for="Heaven">Heaven</label>
+</div>
 
+<br><label for="emaileyes_color">What color shoes was the person wearing?</label>
+
+
+
+<br>
 <label for="emaileyes_color">What color shoes was the person wearing?</label>
 <input type="color" id="eyes_color">
 
