@@ -1,0 +1,29 @@
+
+.mainMenu {
+  display: flex;
+  
+  flex-direction:row ;
+  justify-content: space-around;
+  flex-wrap:wrap;
+}
+.list1 {
+    background-color: orange;
+    width:auto;
+   
+   
+    }
+.list2 {
+       width:auto;
+       color: green;
+       background-color: blanchedalmond;
+     
+       text-transform: capitalize;
+    }
+    
+    .mainBox{
+        display:flex;
+        flex-wrap: wrap;
+        justify-content:space-between;
+    }
+    
+  
