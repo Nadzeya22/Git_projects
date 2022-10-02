@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Rainbow</title>
+    <style>
+      /* Modify this section to solve the homework. Uncomment the codes below. */
+    
+      div p {
+        background-color:yellow ;
+      }
+      div > p {
+        background-color: orange;
+       
+      }
+      div ~ p {background-color: blue;
+        
+      }
+      div + p {background-color: green;
+
+      }
+      h2{
+        text-shadow: 0px 2px 4px rgb(240, 237, 237);
+        //Make a fancy shadow for h2 here. Style it anyway you want!
+      }
+      p{ font-family: 'Segoe UI';
+        //Change the fonts here. Use any font you want, even comic sans!
+      }
+   
+        .button {
+          background-color:tomato ; 
+          filter: invert(100%); 
+          color: black ;
+          padding:  16px 32px;  
+          width: fit-content;
+  
+}
+
+   
+        //modify the link into a button. Make the button color "Bondi Blue", which is the inverse color of "tomato". More info: https://www.color-name.com/tomato.color
+      
+     
+    </style>
+  </head>
+  <body>
+    <h2>Let's make a rainbow</h2>
+
+    <p>
+      Use combinators in internal CSS and inline CSS to produce rainbow below.
+      Make the link into a button with "Bondi Blue" color.
+    </p>
+
+    <!--Use inline for Red; use predefined name-->
+    <p style="background-color: red; ">Red</p>
+    <div>
+      <!--Use internal CSS + combinators for orange and yellow-->
+      <p>Orange</p>
+      <section>
+        <p>Yellow</p>
+      </section>
+    </div>
+    <!--Use internal CSS + combinators for green and blue-->
+    <p>Green</p>
+    <p>Blue</p>
+    <!--Use inline for Indigo; use hex-->
+    <p style="background-color: #4B0082">Indigo</p>
+    <!--Use inline for Indigo; use rgb-->
+    <p style="background-color: rgb(128,0,128)">Violet</p>
+    </div>
+    <div>
+
+<p class="button">Rainbows are awesome!</p>
+  </body> 
+</html>
