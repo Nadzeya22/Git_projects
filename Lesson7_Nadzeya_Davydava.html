@@ -1,0 +1,178 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Layout from Figma</title>
+
+<style>
+
+html,body {
+display: flex;
+flex-direction: column;
+margin: 0px;
+padding: 0px;
+height: 100vh;
+width: 100vw;
+}
+
+.MainContainer {
+display: flex;
+flex-direction: column;
+align-items: flex-start;
+padding: 0px;
+margin: 0px;
+height: 100%;
+width: 100%;
+justify-content: space-between;
+align-self: stretch;
+flex-grow: 1;
+}
+
+
+.horizontal {
+    width: 100%;
+    height: 48px;
+    background: #82D4D9;
+    text-align: end;
+    padding: 2 px 16px;
+    display: flex;
+    justify-content: space-between;
+ 
+    
+}
+    
+
+    
+.inlineBlock {
+display: inline-block;
+margin: 0;
+padding:16px 16px;
+line-height: 100%;
+font-weight: bold;
+}
+
+.ContentWrapper {
+display: flex;
+flex-direction: row;
+align-items: center;
+padding: 24px 0px;
+margin: 0px;
+gap: 24px;
+background: white;
+align-self: stretch;
+flex-grow: 1;
+
+}
+
+.Aside {
+display: flex;
+flex-direction: column;
+align-items: flex-start;
+padding: 10px;
+background: #219653;
+
+
+height: 100%;
+width: 600px;
+}
+
+.ArticleArea {
+     display: flex;
+flex-direction: column;
+
+align-items: flex-start;
+padding: 10px;
+background: #F2C94C;
+height: 100%;
+gap: 12px;
+ }
+
+.Article {
+display: block;
+height: 60%;
+width: 100%;
+background-color: bisque;
+padding: 0 10 10 10;
+box-sizing: border-box;
+overflow: auto;
+
+
+
+}
+.imagescontainer {
+display: flex;
+flex-direction: row;
+flex-wrap: wrap;
+height:40%;
+width: 100%;
+background-color: black;
+justify-content: space-evenly;
+align-items: flex-start;
+align-content: center;
+overflow-x: auto;
+
+flex-grow: 1;
+
+
+
+
+
+}
+
+ .image{
+    width: 150px;
+    height: 40%;
+    background: #FFFFFF;
+    margin: 8px;
+ }
+
+</style>
+</head>
+
+
+<body>
+<div class="MainContainer">
+   
+<div class="horizontal"> 
+    <div class="inlineBlock" style="font-style: italic ;">Our company</div>
+        <div><div class="inlineBlock">Home</div>
+    <div class="inlineBlock">Products</div>
+    <div class="inlineBlock">Services</div></div>
+</div>
+
+
+<div class="ContentWrapper">
+<div class="Aside"> 
+<h1>Our services</h1> 
+<ul>      
+   <li>Two</li> 
+   <li>Three</li> 
+   <li>Four</li> 
+</ul>
+</div>
+<div class="ArticleArea">
+<div class="Article">
+    <h2>Service 1</h2>
+    <p>By default in the CSS box model, the width and height you assign to an element is applied only to the element's content box. If the element has any border or padding, this is then added to the width and height to arrive at the size of the box that's rendered on the screen. This means that when you set width and height, you have to adjust the value you give to allow for any border or padding that may be added. For example, if you have four boxes with width: 25%;, if any has left or right padding or a left or right border, they will not by default fit on one line within the constraints of the parent container.</p>
+    <p>By default in the CSS box model, the width and height you assign to an element is applied only to the element's content box. If the element has any border or padding, this is then added to the width and height to arrive at the size of the box that's rendered on the screen. This means that when you set width and height, you have to adjust the value you give to allow for any border or padding that may be added. For example, if you have four boxes with width: 25%;, if any has left or right padding or a left or right border, they will not by default fit on one line within the constraints of the parent container.</p>
+
+</div>
+<div class="imagescontainer">
+<div class="image">1</div> 
+<div class="image">2</div>
+<div class="image">3</div>    
+</div>
+</div> 
+</div>
+
+
+
+<div class="horizontal">
+ 
+    <a href="">Thank you for reviewing!</a>
+    </div>
+</div>
+</div>
+</body>
+</html>
