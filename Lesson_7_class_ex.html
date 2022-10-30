@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Boxes</title>
+    <style>
+
+        html, body {
+           
+            height: 100%;
+            width: 100%;
+            margin: 0;
+            
+        }
+
+.wrapper{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+}
+
+        .outerBox{
+            
+            border: blue 1px solid;
+           height: 50vh;
+           width: 50vw;
+               }
+        .innerBox{
+            background-color: red;
+            width: 50%;
+            height: 50%;
+            margin: 0%;
+        }
+        
+        
+            </style>
+</head>
+<body>
+<div class="wrapper">
+<div class="outerBox">
+    <p class="innerBox">This is redi</p>    
+</div>
+</div>
+
+</html>

@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Filters</title>
+    <style>
+.line {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+   background-color: beige;
+    padding: 8px 16px;
+    gap: 8px;
+    height:56px;
+}        
+.date {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: gray;
+    height: 48px;
+color: red;
+   
+    max-width: 240px;
+    flex-grow: 1;
+    flex-shrink: 2;
+ 
+    }
+
+.select {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: gray;
+    color: green;
+   
+    max-width: 240px;
+    height: 48px;
+    flex-grow: 1;
+    flex-shrink: 1;
+    }
+.text {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: gray;
+    color:blue;
+    height: 48px;
+    width: auto;
+    flex-grow: 2;
+    flex-shrink: 0;
+    }
+
+
+    </style>
+
+ 
+</head>
+<body>
+    <h1>View 1</h1>
+ <div class="line">
+<div class="text">Path</div>
+<div class="date">Changed from</div>
+<div class="date">Changed to</div>
+ </div>   
+ 
+ <div class="line">
+<div class="select">Type</div>
+<div class="text">Changed by</div>
+<div class="select">Status</div>
+<div class="select">Processed</div>
+ </div> 
+
+ <h1>View 2</h1>
+ <div class="line">
+<div class="text">Object</div>
+<div class="text">Message</div>
+
+<select class="select">Status</select>
+ </div>   
+       
+ <div class="line">
+<div class="text">Sent by</div>
+<div class="date">Sent from</div>
+<div class="date">Sent to</div>
+ </div> 
+
+<h2>Notifications view</h2>
+<div class="line">
+    <div class="text">Object</div>
+    <div class="date">Sent from</div>
+        <div class="date">Sent to</div>
+   
+    </div>
+    <div class="line">
+        <div class="text" style="width:30%;">Sent by</div>
+        <div class="text" style="width:70%;">Message</div>
+                </div>
+
+    <h2>Jobs</h2>
+    <div class="line">
+    <div class="text">Job name</div>  
+    <select class="select">Status</select>
+            </div>
+
+<div class="line">
+ <div class="date">Created since</div> 
+ <div class="text" >Created by</div>
+ <select class="select">Trigger</select>
+</div>
+
+
+
+    </body>
+</html>      

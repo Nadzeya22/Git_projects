@@ -1,0 +1,65 @@
+/*in this CSS, I used combinators to locate the styles. 
+I also applied the align-contnent property to the wrapper, 
+but still had to align both pictures and the submit button with "align-self" -
+ I wonder why  those elements were not affected by the alignment of the wrapper?
+  */
+
+/*Label font*/
+body {
+    background-color: #eeeeee;
+   font-family: 'Courier New', Courier, monospace;
+   font-size: 16px;
+}
+/*wrapper*/
+.logInForm {
+    background-color: #ffffff;
+    width: 450px;
+    height: fit-content;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    padding: 25px;
+    align-content: center;
+    justify-content: space-around;
+       
+      }
+     
+
+/*password input*/      
+.mandatory::after {
+content: "mandatory field!";
+padding-left: 8px;
+color: red;
+}      
+/*logo*/
+img:first-child {
+    width: 70%;
+    padding:16px;
+    align-self: center;
+   }
+/*avatar picture */
+  img ~ img {
+    height: 30%;
+    width: 30%;
+    border-radius: 24px;
+    margin:16px;
+    align-self: center;
+    
+   }
+   
+   /*submit button*/
+    input:last-child{
+    
+    margin: 32px;
+    
+    width: 100%;
+    height: 32px;
+    background-color: #2CB0C7;
+    border: none;
+    color: white;
+    align-self: center;
+       }
+
+     input+input:hover{
+        background-color: #FD4D00;
+     }

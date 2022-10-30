@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+<style>
+div div {
+    height: 40px;
+    background-color: green;
+}
+.wrapper {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 16px;
+}
+.fixed {
+    width: fit-content;
+    max-width: 160px;
+    min-width: 100px;
+ flex-grow: 1;
+    flex-shrink: 1;
+    background-color: yellow;
+}
+.select {
+    width: 20%;
+    max-width: 300px;
+    flex-grow: 2;
+    background-color: red;
+    flex-shrink:1;
+}
+.text {
+    width: 40%;
+    flex-grow: 3;
+    background-color: orange;
+    flex-shrink: 0;
+}
+</style>
+</head>
+<body>
+    <div class="wrapper">
+    <div class="fixed">Date</div>
+    <div class="select">Select</div>
+    <div class="text">Text</div>
+</div>
+</body>
+</html>

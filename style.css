@@ -1,0 +1,54 @@
+/*Locate elements with attr selectors, IMHO this is better for reuse and consistency" (?)*/
+
+/*Label font*/
+body {
+    background-color: #eeeeee;
+    font-family: 'Courier New', Courier, monospace;
+}
+/*wrapper*/
+.logInForm {
+    background-color: #ffffff;
+    width: 450px;
+    height: fit-content;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    padding: 25px;
+    
+      }
+/*password input*/      
+.mandatory::after {
+content: "mandatory field!";
+padding-left: 8px;
+color: red;
+
+}      
+/*logo*/
+img:first-child {
+    width: 70%;
+    align-self: center;
+    padding:16px;
+   }
+/*avatar picture */
+    [src="avatar.jpg"]{
+    height: 30%;
+    width: 30%;
+    border-radius: 24px;
+    margin:16px;
+    align-self: center;
+   }
+
+   /*submit button*/
+   input[type="button"] {
+    margin: 32px;
+    width: 100%;
+    align-self: center;
+    height: 32px;
+    background-color: #2CB0C7;
+    border: none;
+    color: white;
+       }
+     input[type="button"]:hover {
+        background-color: #FD4D00;
+     }
+

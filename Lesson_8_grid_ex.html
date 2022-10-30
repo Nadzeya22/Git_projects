@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grids</title>
+<style>
+body{
+    background-color: azure;
+}
+.1wrapper {
+display
+grid-template-columns:33% 33% 33%;
+padding: 8px;
+border: 2px;
+height: 200px;
+width:100%;
+}
+
+
+.display-grid {
+  display: grid;
+  grid-template-columns: 33% 33% 33%;
+  padding: 8px;
+  border: 2px solid red;
+height: 60px;
+width:100%;
+}
+
+.inlinetext{
+    border: 2px solid red;
+    padding:4px;
+
+}
+     
+.inline {
+    display: inline;
+    border: 2px solid red;
+    padding:4px;
+}
+ 
+</style>
+
+</head>
+<body>
+ <div class="display-grid">
+ <div style="background-color: tomato; color: white">White text on <em>tomato</em> background</div>
+ <div style="background-color: white; color:tomato">Tomato text on <strong> white </strong> background</div>
+ <div style="background-color: tomato; color: white">White text on <span style="display:block; color:green;" ><strong>red</span><strong></strong></span>background</div>
+ </div>
+ <p class="inlinetext"><span class="inlinetext">Bring the text </span> <span class="inlinetext">inline!</span></p>
+ 
+<div class="inlinetext">
+ <p class="inline">Bring the text</p>
+ <p class="inline">inline!</p>
+
+ 
+</div>
+</html>
