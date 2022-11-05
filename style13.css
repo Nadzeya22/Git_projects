@@ -1,0 +1,95 @@
+body, html {
+    margin: 0;
+    height: 100vh;
+    width: 100vw;
+}
+
+.sky {
+    background-color: turquoise;
+    height: 40%;
+    width: 100vw;
+}
+
+.grass {
+    background-color: green;
+    height: 30%;
+    width: 100vw;
+    
+}
+
+.road {
+    background-color: rgb(42, 40, 40);
+    height: 30%;
+    width: 100vw;
+    border-top: 10px solid grey;
+border-bottom: 10px solid grey;
+        
+}
+
+.sun {
+    background-color: yellow;
+    height: 8em;
+    width: 8em;
+    border-radius: 50%;
+    position: absolute;
+    left: 10%;
+    top: 10%;
+    animation-name: shine;
+    animation-duration: 10s;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+    animation-direction: alternate-reverse;
+}
+.lines {
+    box-sizing: border-box;
+    border: 5px dashed #ffffff;
+    height: 0px;
+    width: 100%;     
+  }
+.bird {
+    width: 6em;
+    height: 6em;
+ 
+   animation-name: hop;
+   animation-duration: 3s;
+   animation-iteration-count: infinite;
+  
+}
+
+.mario {
+    animation-name: drive;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+.cat {
+    width: 10em;
+    height: 6em;
+    position: absolute;
+    right: 40vw;
+    margin-top: 2em;
+}
+.cat:hover {
+    transform: rotate(180deg);
+    transition: ;
+}
+@keyframes drive {
+    from {transform: translate(0);}
+    to {transform: translate(100vw);}
+    }
+
+ @keyframes hop {
+    
+    0% { transform: translateX(80vw)  }
+    40%   { transform:  translateX(40vw)   translateY(20vw)}
+    100%   { transform:  translateX(0)   translateY(0)}
+    }
+ 
+    @keyframes shine {
+        from {transform: scale(0.5, 0.5);}
+        to {transform: scale(1,1 );}
+    }
+    @keyframes lie {
+        from {transform: rotate(0);}
+        to {transform: rotate (180deg);}
+    }
