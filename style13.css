@@ -71,8 +71,7 @@ border-bottom: 10px solid grey;
 }
 .cat:hover {
     transform: rotate(180deg);
-    transition: ;
-}
+    }
 @keyframes drive {
     from {transform: translate(0);}
     to {transform: translate(100vw);}

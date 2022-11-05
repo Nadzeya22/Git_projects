@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>animation</title>
+    <style>
+        body {
+            margin: 12px;
+        }
+        .circle {
+            width: 200px;
+            height: 200px;
+            background-color: red;
+            border-radius: 50%;
+            margin: 24px;
+                    }
+
+        .square {
+            width: 200px;
+            height: 200px;
+            background-color: yellow;
+            margin: 24px;
+           
+                    }
+
+    .circle:hover {
+        animation-name: changecolor;
+        animation-duration: 5s;
+        transform: scale(1.4)
+           }                
+
+    @keyframes changecolor {
+        from {background-color: green;}
+        to {background-color:orange;}
+    }
+.square:hover {
+    animation-name: squarechangecolor;
+            animation-duration: 4s;
+            transform:rotate(45deg);
+}
+    @keyframes squarechangecolor {
+        0 {
+          background: yellow;
+        }
+        25% {
+          background: orange;
+        }
+        50% {
+          background: tomato;
+        }
+        100% {
+          background: red;
+        }
+      }
+    }
+    </style>
+</head>
+<body>
+    <div class="circle"></div>
+    <div class="square"></div>
+</body>
+</html>
